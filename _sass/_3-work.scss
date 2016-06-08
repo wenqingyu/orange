@@ -154,22 +154,23 @@ $work-icon-size: 30px;
     }
 
     .work-tile-link {
-      bottom: 0;
-      right: 0;
-      left: 0;
       color: black;
-      background-color: $white;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: transparent;
       border: none;
 
       .icon {
-        display: block;
-        margin: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 2em;
+        fill: $white;
       }
 
-      &:hover {
-        background-color: $red;
-        color: $white;
-      }
     }
   }
 
